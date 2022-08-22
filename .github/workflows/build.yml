@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: 16.14.2 # 指定node版本
       # 打包代码生成环境
-      - name: Build
-        run: |
-          npm install # 安装依赖
-          npm build # 打包
+      # - name: Build
+      #   run: |
+      #     npm install # 安装依赖
+      #     npm build # 打包
       # 部署
       - name: Deploy
         uses: cross-the-world/scp-pipeline@master
