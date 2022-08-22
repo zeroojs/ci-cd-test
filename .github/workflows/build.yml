@@ -28,5 +28,5 @@ jobs:
           user: ${{ secrets.HOST_USER }} # 服务器用户名
           pass: ${{ secrets.HOST_PASS }} # 服务器密码
           connect_timeout: 30s
-          local: './dist/v1.0.0/*' # 源路径（工作流）
-          remote: /www/wwwroot/cicd.zeroojs.com/v1.0.0 # 目标路径（服务器）
+          local: './dist/*' # 源路径（工作流）
+          remote: /www/wwwroot/cicd.zeroojs.com/dist # 目标路径（服务器）
