@@ -10,6 +10,10 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
+import { version } from '../package.json'
+import { ref } from 'vue'
+
+const msg = ref(`Version ${version}`);
 </script>
 
 <template>
@@ -21,7 +25,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Version 1.0.1" />
+  <HelloWorld :msg="msg" />
 </template>
 
 <style scoped>
